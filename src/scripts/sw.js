@@ -17,7 +17,6 @@ const assetsToCache = [
   './sw.bundle.js',
 ];
 
-/* eslint-disable no-unused-vars */
 self.addEventListener('install', (event) => {
   event.waitUntil(CacheHelper.cachingAppShell([...assetsToCache]));
 });
