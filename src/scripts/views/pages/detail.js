@@ -12,7 +12,6 @@ const Detail = {
   async afterRender() {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const movie = TheMovieDbSource.detailMovie(url.id);
-    console.log(movie);
     const movieContainer = document.querySelector('#movie');
     movieContainer.innerHTML = createMovieDetailTemplate(movie);
   },
