@@ -27,5 +27,7 @@ self.addEventListener('active', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
+  console.log(event.request);
+  if (!(event.request.url.indexOf('http') === 0)) return;
   event.respondWith(CacheHelper.revalidateCache(event.request));
 });
