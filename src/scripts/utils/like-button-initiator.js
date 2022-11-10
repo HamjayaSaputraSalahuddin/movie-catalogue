@@ -29,7 +29,7 @@ const LikeButtoninitiator = {
 
     const likeButton = document.querySelector('#likeButton');
     likeButton.addEventListener('click', async () => {
-      await FavoriteMovieIdb.putMovie(this.movie);
+      await FavoriteMovieIdb.putMovie(this.__movie);
       this.__renderButton();
     });
   },
