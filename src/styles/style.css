@@ -169,7 +169,7 @@ main {
     height: 55px;
     display: flex;
     align-items: center;
-    justify-self: center;
+    justify-content: center;
     background-color: #db0000;
     position: fixed;
     bottom: 16px;
